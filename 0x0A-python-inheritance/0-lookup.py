@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-"""lookup"""
 
-def lookup(obj):
-    """function that returns the list of available attributes and methods of an object"""
+
+
+def inherits_from(obj, a_class):
+    """A function that returns True if the object is
+    an instance of a class that inherited (directly or indirectly)
+    from the specified class;
+    otherwise False.
+    """
     return dir(obj)
