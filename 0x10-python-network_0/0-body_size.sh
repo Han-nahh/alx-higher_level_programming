@@ -1,3 +1,3 @@
 #!/bin/bash
-# Display the size of the body of a response from curling a URL
-curl -sI "$1" | grep 'Content-Length' | cut -d' ' -f2
+# ends a request to that URL displays the size of the response body
+curl -sI "$1" | grep -i Content-Length | cut -d " " -f2
